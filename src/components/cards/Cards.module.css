@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.list{
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.listItem{
+    display: inline;
+    list-style-type: none;
+}

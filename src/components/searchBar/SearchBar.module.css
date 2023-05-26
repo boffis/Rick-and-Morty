@@ -1,0 +1,6 @@
+.container{
+    background-color: red;
+    display: inline-block;  
+    padding: 20px;
+    justify-items: center;
+}
