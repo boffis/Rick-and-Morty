@@ -1,10 +1,10 @@
 import { ADD_FAV, REMOVE_FAV } from "./types";
 
 
-export const addFav = (id) =>{
+export const addFav = (char) =>{
     return{
         type:ADD_FAV,
-        payload:id
+        payload:char
     }
 }
 

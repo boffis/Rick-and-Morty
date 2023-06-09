@@ -8,6 +8,7 @@ import About from './components/about/About.jsx'
 import Detail from './components/detail/Detail';
 import Form from './components/form/Form';
 
+
 function App() {
 
    const [characters, setCharacters] = useState([])
@@ -31,7 +32,7 @@ function App() {
    }, [access]);
 
    const onSearch = id =>
-     { axios(`https://rickandmortyapi.com/api/character/${id}`)
+     { axios(`http://localhost:3001/rickandmorty/character/${id}`)
       .then(({ data }) => {
          console.log (data)
          if (data.name) {

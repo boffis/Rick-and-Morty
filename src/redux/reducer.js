@@ -7,18 +7,18 @@ const reducer = (state = initialState, action) =>{
          case ADD_FAV: {
             return {
                 ...state,
-                fav : [...state.fav, payload]
+                fav : [...state.fav, action.payload]
             }
          }
          case REMOVE_FAV:{
-            const removed = fav.filter(
-                char=>char.id !== payload
-            )
+            const removed = state.fav.filter( char => char.id !== action.payload )
             return{
                 ...state,
                 fav: [removed]
             }
          }
+         default :
+         return {...state}
     }
 }
 
